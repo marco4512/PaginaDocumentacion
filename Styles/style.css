@@ -1,0 +1,32 @@
+.opciones_menu{
+    display: inline-block;
+
+}
+.Buscador{
+    border-radius: 3px;
+    border:0;
+    outline: none;
+    border-bottom: 2px solid black;
+    width: 180px;
+    text-align: center;
+}
+.texto_opciones_menu{
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    font-size: large;
+    color: black;
+
+}
+.menu{
+    margin: 10px;
+    float: right;
+    text-align:right;
+
+}
+.Imagen_banner{
+    display: inline-block;
+}
+.contenedor_menu{
+    margin: 0 auto;
+}
