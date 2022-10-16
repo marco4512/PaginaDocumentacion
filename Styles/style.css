@@ -188,6 +188,7 @@ dd{
 @media all and (max-width:800px){
     .img-text-contenedor{
       margin: 10px;
+      width: 100%;
     }
     .hamburgesa{
         margin-left: 10px;
@@ -202,8 +203,10 @@ dd{
         margin-left: 28%;
     }
     .imagen_bien{
-        margin: 0 auto;
 
+        margin: 0 auto;
+       width: 100%; 
         float:none;
     }
+  
 }
