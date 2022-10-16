@@ -169,12 +169,13 @@ dd{
       margin: 10px;
     }
     .hamburgesa{
+        margin-left: 10px;
         visibility: visible;
     }
 
 
     .Imagen_banner{
         display: inline-block;
-        margin-left: 30%;
+        margin-left: 28%;
     }
 }
