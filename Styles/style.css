@@ -172,7 +172,9 @@ dd{
         margin-left: 10px;
         visibility: visible;
     }
-
+    .menu{
+        visibility: hidden;
+    }
 
     .Imagen_banner{
         display: inline-block;
