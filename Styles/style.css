@@ -204,8 +204,6 @@ dd{
     .imagen_bien{
         margin: 0 auto;
 
-        max-height:200px;
-        max-width: 350px;
         float:none;
     }
 }
