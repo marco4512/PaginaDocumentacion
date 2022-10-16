@@ -10,26 +10,49 @@
     <title>Home</title>
 </head>
 <body>
-    <div class="nav_iframe">
+    <div  class="nav_iframe">
         <iframe class="nav_iframe_frame" src="nav.html" frameborder="0">
         </iframe>
-       
+    <div class="BarraProgreso">
+            <div id="ProgresPage" class="Barra" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>   
     </div>
+    
     <div class="contenido">
-        <h1 class="titul">¿Qué hace esta pagína?</h1>
+        <h1 class="titul">Fundamentos</h1>
         <hr>
-        <div class="img-text- contenedor">
-            <div class="img_text">
-
-            </div>
+        <div class="img-text-contenedor">
             <div class="text-img">
-                <p> Esta pagina fue diseñada , para que cualquier desarrollador que deese consultar,
-                    crear o comentar algun tipo de error o mejora para la creacion de de boots con dialog flow
-                    pueda hacerlo de manera eficaz y rapida, asi mismo, esta pagina ayudara al crecimiento de 
-                    la documentacion de esta herramienta. Para la ceacion rapida y correcta de este tipo de boots como
-                    herramientas de trabajo.
+                <p class="titulo_resal"> <u> Visión general </u></p>
+                <p>
+                    En esta sección puedes encontrar los fundamentos necesarios para entender todo lo vital para crear un chatbot desde 0. 
+                    La intención de esta sección es dar a conocer tanto las estructuras de los chatbots como la forma en la que se relacionan con la comunicación humana. 
                 </p>
-
+            </div>
+            <div class="Dash">
+                <p class="titulo_pack"> <u> Índice fundamentos </u></p>
+                <p class="text-pack">
+                    Aquí puedes encontrar la lista de temas necesarios para tener los fundamentos de esta documentación.
+                </p>
+                <hr class="dividir-pack">
+                <ol class="lista_temas">
+                    <li><a class="tema" href="">Introducción</a></li>
+                        <dd><a class="sub_tema" href="">Bienvenida</a></dd>
+                        <dd><a class="sub_tema" href="">¿Qué es este documento?</a></dd>
+                        <dd><a class="sub_tema" href="">¿Cómo se estructura el documento?</a></dd>
+                        <dd><a class="sub_tema" href="">Panorama general y alcances esperados.</a></dd>
+                        <dd><a class="sub_tema" href="">Trabajos previos e investigaciones que aportan al proyecto</a></dd>
+                    <li><a class="tema" href="">Estado del arte de los chatbots en 2022</a></li>
+                        <dd><a class="sub_tema" href="">¿Qué es un chatbot?</a></dd>
+                        <dd><a class="sub_tema" href="">Tipos de chatbots</a></dd>
+                        <dd><a class="sub_tema" href="">¿Cómo funciona un chatbot?</a></dd>
+                        <dd><a class="sub_tema" href="">Características de los chatbots</a></dd>
+                        <dd><a class="sub_tema" href="">Plataformas que ayudan con la creación de bots</a></dd>
+                        <dd><a class="sub_tema" href="">Uso de los chatbots</a></dd>
+                        <dd><a class="sub_tema" href="">Limitaciones de los chatbots no code</a></dd>
+                        <dd><a class="sub_tema" href="">Ejemplos del uso de chatbots</a></dd>
+                        <dd><a class="sub_tema" href="">¿Es un chatbot una solución a mi problema?</a></dd>
+                </ol>
             </div>
         </div>
     </div>
@@ -43,20 +66,5 @@
 
 </body>
 
-<script>
-window.onscroll = function (){
-    // Obtenemos la posicion del scroll en pantall
-    var scroll = document.documentElement.scrollTop || document.body.scrollTop;
-    var sombra = document.getElementById('sombra');
-    // Realizamos alguna accion cuando el scroll este entre la posicion 300 y 400
-    if(scroll > 0){
-        sombra.style.backgroundColor = '#A6A6A6';
-        console.log("Pasaste la posicion 300 del scroll");
-    }
-    else{
-        sombra.style.backgroundColor = 'White';
-    }
-    
-}
-</script>
+<script src="js/progreso.js">   </script>
 </html>
