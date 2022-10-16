@@ -160,9 +160,22 @@ dd{
    width: 100%;
    height: 50px;
 }
+.hamburgesa{
+    visibility: hidden;
+}
 
 @media all and (max-width:800px){
     .img-text-contenedor{
       margin: 10px;
+    }
+    .hamburgesa{
+        margin-left: 20%;
+        visibility: visible;
+    }
+
+
+    .Imagen_banner{
+        display: inline-block;
+        margin-left: 30%;
     }
 }
