@@ -319,8 +319,138 @@ dd{
     width: 100%;
   
 }
+.tabla_contenido_plataformas{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    gap: 1%;
+    
 
+}
+.tabla_contenido_plataformas div{
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+    font-family:"EncodeSans-VariableFont_wdth,wght",Impact;
+    font-size: 1.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    
+
+}
+.tabla_contenido_plataformas li{
+    font-family:"EncodeSans-VariableFont_wdth,wght",Impact;
+    text-align: left;
+    font-size: 20px;
+  
+    
+
+}
+.separador_plata{
+    visibility: hidden;
+}
+.celda_1{
+
+    border-left:1px solid #1a2633;
+    border-bottom:1px solid #1a2633;
+}
+.celda_2{
+    border-left: 1px solid #1a2633;
+    border-right:1px solid #1a2633;
+    border-bottom:1px solid #1a2633;
+}
+.celda_3{
+    border-bottom:1px solid #1a2633;
+}
+.celda_4{
+    border-left: 1px solid #1a2633;
+    border-right: 1px solid #1a2633;
+    border-bottom:1px solid #1a2633;
+}
+.celda_1 p{
+    visibility: hidden;  
+}
+.celda_2 p{
+    visibility: hidden;
+}
+.celda_3 p{
+    visibility: hidden;
+}
+.celda_4 p{
+    visibility: hidden;
+}
 @media screen and (max-width:800px){
+    .tabla_contenido_plataformas{
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        gap: 0%;
+        font-size: 10px;
+    
+    }
+    .tabla_contenido_plataformas li{
+        text-align: justify;
+        font-size: 10px;
+        margin-right: 5px;
+    
+    }
+    .tabla_contenido_plataformas li{
+        text-align: justify;
+        font-size: 10px;
+        margin-right: 5px;
+    
+    }
+    .separador_plata{
+        margin: 0 auto;
+        visibility: visible;
+        width: 85%;
+        height: 10px;
+        border-bottom:1px solid #1a2633;
+    }
+    .celda_1{
+        visibility: visible;
+        border-left: 0px solid #1a2633;
+        border-right:1px solid #1a2633;
+        border-bottom:1px solid #1a2633;
+    }
+    .celda_2{
+        visibility: visible;
+        border-right:0px solid #1a2633;
+        border-left: 1px solid #1a2633;
+        border-bottom:1px solid #1a2633;
+    }
+    .celda_3{
+        visibility: visible;
+        border-right: 1px solid #1a2633;
+        border-top: 1px solid #1a2633;
+        border-bottom:0px solid #1a2633;
+    }
+    .celda_4{
+        visibility: visible;
+        border-left: 1px solid #1a2633;
+        border-top: 1px solid #1a2633;
+        border-right: 0px solid #1a2633;
+        border-bottom:0px solid #1a2633;
+    }
+    .celda_1 p{
+        visibility: visible;
+    }
+    .celda_2 p{
+        visibility: visible;
+    }
+    .celda_3 p{
+        visibility: visible;
+        margin-left: 5px;
+    }
+    .celda_4 p{
+        visibility: visible;
+
+    }
+
     .contenedor_texto p{
         text-align: justify;
     }
