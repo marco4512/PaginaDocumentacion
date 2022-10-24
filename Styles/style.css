@@ -231,10 +231,7 @@ dd{
     
 }
 /*Pruebas de contenido responsivo con em y rem*/
-@font-face {
-    font-family: "EncodeSans-VariableFont_wdth,wght";
-    src: url("fonts/Encode_Sans/EncodeSans-VariableFont_wdth,wght.ttf");
-  }
+
 .contenedor_principal{
     margin-top: 130px;
     
