@@ -320,6 +320,8 @@ dd{
   
 }
 .contenido_indice{
+    display: block;
+    overflow: hidden;
     width: 100%;
     text-align: justify;
     font-size: 1.8em;
@@ -330,6 +332,8 @@ dd{
 .sub_contenido{
     margin: 0.625em;
     width: 100%;
+    overflow: hidden;
+   
 
 }
 #plataformas{
@@ -338,16 +342,59 @@ dd{
 }
 .sub_contenido li{
     font-style: none;
+    
 }
 .sub_contenido a{
     font-style: none;
     text-decoration: none;
     color: #1a2633;
+    overflow: hidden;
 
+}
+.ventas_desventajas{
+    overflow: hidden;
+    width: 95%;
+    align-items: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    text-align: justify;
+    color: #1a2633;
+    font-size: 1.2em;
+    
+}
+
+.ventajas{
+    margin: 0 auto;
+    width: 100%;
+   
+    grid-column: 1 / 1;
+}
+.desventajas{
+    margin: 0 auto;
+    width: 100%;
+    
+    grid-column: 2 / 3;
+
+}
+.Costos{
+    margin: 0 auto;
+    width: 100%;
+    
+    grid-column: 3 / 3;
+
+}
+.Costos p{
+    text-align: center;
 }
 
 @media screen and (max-width:800px){
-   
+    .ventas_desventajas{
+     align-items: center;
+     display: block;
+     margin: 0 auto;
+    }
     .separador_plata{
         margin: 0 auto;
         visibility: visible;
