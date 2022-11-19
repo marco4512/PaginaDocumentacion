@@ -4,9 +4,97 @@
 }
 body{
     background-color: #f9fafb;
+    position: relative;
+    padding-bottom: 8em;
+    min-height: 100vh;
+    margin: 0;
 }
 .titul{
     margin-top: 140px;
+}
+.indice_contenedor{
+    margin: 0 auto;
+    width: 95%;
+    background-color: #f9fafb;
+    border-radius: 0.625em;
+    margin-bottom: 3.125em;
+}
+.cont_introduccion_indice{
+    width: 100%;
+    height: 100%;
+}
+.controles{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns:20% 60% 20%;
+    align-items: right;
+
+}
+#estado_del_arte_control{
+    font-size: 0.9375em;
+    color: #6f7685;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+ 
+}
+#estado_del_arte_control:focus,
+#estado_del_arte_control:hover {
+  color: #1a2633;
+}
+
+#estado_del_arte_control:focus:after,
+#estado_del_arte_control:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+#estado_del_arte_control:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.indice_introduccion{
+    width: 95%;
+    height: 90%;
+    transition: opacity 1s;
+   
+}
+#controles_dialog{
+    display:none;
+}
+.indice_dialog{
+    width: 95%;
+    height: 90%;
+    transition: opacity 1s;
+}
+#dialog_indice{
+    display:none;
+}
+#uno_estado{
+    width: 95%;
+    height: 90%;
+    display:none;
+    transition: opacity 1s;
+
+}
+#controles_estado{
+    display:none;
 }
 
 .img-text-contenedor{
@@ -61,6 +149,7 @@ body{
     font-size: 1.2rem;
 }
 .sub_tema{
+    margin-left: 0.625em;
     text-decoration: none;
     color: #6f7685;
 }
@@ -121,8 +210,6 @@ dd{
     margin-top: 100px;
     width: 100%;
     margin-bottom: 70px;
-  
-
 
 }
 .sombra{
@@ -362,7 +449,8 @@ dd{
 
 #plataformas{
     font-style: none;
-    list-style-image: url('/Img/Ellipse 4.png');
+    margin: 0 auto;
+
 }
 .sub_contenido li{
     font-style: none;
@@ -416,35 +504,107 @@ dd{
     color: #7bb583;
     
 }
+
 .menu_lateral{
     width: 25%;
-    height: 780px;
+    height: 650px;
     background-color: #007bff;
     position:fixed; top:0; 
     float: left;
     z-index: 20;
-    opacity: .5;
+    opacity: .95;
     visibility: hidden;
-    margin: 0;
+    margin: 0 auto;
+    align-items: center;
+    overflow-y: scroll;
+}
+.Mostar_menu_lateral{
+    width: 25%;
+    height: 650px;
+    position:fixed; top:0; 
+    float: left;
+    z-index: 20;
+    opacity: .95;
+    margin: 0 auto;
+    align-items: center;
+    overflow-y: scroll;
+}
+.Header_Indice{
+    display: grid;
+    grid-template-columns:80% 10%;
+    width: 90%;
+    gap:1.25rem;
+    margin: 0 auto;
+    margin-top: 0.625em;
+    align-items: center;
+    color: aliceblue;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.titulo_indice{
+ /*sdaf*/
+ height: 100%;
+}
+#sub_menu_intro{
+    width: 90%;
+    display:none;
+    text-align: justify;
+
+}
+#sub_menu_intro a{
+    color: white;
+    text-decoration: none;
+
+}
+#sub_menu_intro a:hover{
+    text-decoration: underline;
+
+
+}
+#sub_menu_intro_2{
+    width: 90%;
+    display:none;
+    text-align: justify;
+
+}
+#sub_menu_intro_2 a{
+    color: white;
+    text-decoration: none;
+
+}
+#sub_menu_intro_2 a:hover{
+    text-decoration: underline;
+
+
+}
+
+#Estado_click{
+    font-size: 1.25em;
+}
+#introduccion_click{
+    font-size: 1.25em;
+}
+.indice_lateral li{
+    color: white;
+}
+.boton_salir {
+height: 100%;
+
+}
+
+.boton_salir svg{
+    opacity: .6;
+   float: right;
 }
 .button_lateral{
     margin: 0 auto;
-    
+    opacity: .5;
     margin-top:100px;
     position:fixed; top:0;
     float: left;
     z-index: 20;
     align-items: center;
 
-}
-
-.button_lateral :hover{
-    background-color: #7bb583;
-    width: 30px;
-    height: 700px;
-    margin: 0 auto;
-    align-items: center;
-    opacity: .8;
 }
 
 .button_lateral div{
@@ -454,10 +614,50 @@ dd{
     margin: 0 auto;
     align-items: center;
     z-index: 21;
+    
+}
+.li_un{
+    font-style: none;
+    color: #1a2633;
+    font-size: 1.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    background-color: #007bff;
+    padding: 1em 0;
+
+    
+}
+.navegacion_atras_a_delante{
+    display: grid;
+    grid-template-columns:50% 50%;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.3em;
+    
+    
+
+}
+.anterior{
+    margin: 10px;
+    text-align: left;
+}
+.siguiente{
+    margin: 10px;
+    text-align: right;
 }
 
 
+
+
+
 @media screen and (max-width:800px) {
+  
     .plat_grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -480,6 +680,17 @@ dd{
 }
 
 @media screen and (max-width:650px){
+    .controles{
+        grid-template-columns:40% 20% 40%;
+    }
+    .menu_lateral{
+        width: 100%;
+        height: 100%;
+    }
+    .button_lateral{
+        margin-top: 25px;
+        opacity: .7;
+    }
     .plat_grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);

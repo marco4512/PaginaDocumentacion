@@ -5,6 +5,7 @@
     <link href="Styles/css/bootstrap.min.css" rel="stylesheet">
     <scrip src="js/js/bootstrap.bundle.min.js" ></script>
     <script type="js/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" type="text/css" href="Styles/style.css" media="screen" />
     <meta charset="UTF-8">
     <meta name="viewport">
@@ -16,10 +17,51 @@
 </head>
 <body >
             <div class="button_lateral" id="boot_flecha">
-            <object id="objeto" data="svg/arrow_forward_ios_FILL1_wght400_GRAD0_opsz24.svg" style="margin-top:250px;" ></object>
+            <a id="desplegar"><svg xmlns="http://www.w3.org/2000/svg" height="40" width="40"><path d="M5 30v-2.792h30V30Zm0-8.625v-2.75h30v2.75Zm0-8.583V10h30v2.792Z"/></svg></a>
             </div>
-        <div id="menu_lateral_des" class="menu_lateral"></div>
-
+           
+            <div id="menu_lateral_des"  class="menu_lateral">
+                <div class="Header_Indice">
+                    <div class="titulo_indice">
+                        <p> <strong>Indice de navegación</strong></p>
+                    </div>
+                    <div class="boton_salir">
+                        <a id="colapsar"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M3 18v-2h13v2Zm16.6-1-5-5 5-5L21 8.4 17.4 12l3.6 3.6ZM3 13v-2h10v2Zm0-5V6h13v2Z"/></svg></a>
+                    </div>
+                </div>
+                <hr style="color:white;">
+                <ul class="indice_lateral">
+                    <li>
+                    <a id="introduccion_click"><strong>Introduccion</strong></a>
+                        <div id="sub_menu_intro">
+                            <ol>
+                                <li><a onclick="cerrar()" href="Introduccion.html#Bienvenida" >Bienvenida </a></li>
+                                <li><a onclick="cerrar()" href="Introduccion.html#queEs">¿Qué es este documento? </a></li>
+                                <li><a onclick="cerrar()" href="Introduccion.html#comofun">¿Cómo se estructura el documento? </a></li>
+                                <li><a onclick="cerrar()" href="Introduccion.html#panoama">Panorama general y alcances esperados. </a></li>
+                                <li><a onclick="cerrar()" href="Introduccion.html#Trabajos">Trabajos previos e investigaciones que aportan al proyecto </a> </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <a id="Estado_click"><strong>Estado del arte de los chatbots en 2022</strong></a>
+                            <div id="sub_menu_intro_2">
+                                <ol>
+                                    <li><a onclick="cerrar()" href="Estadodelarte.html#Estado_del_arte" >¿Qué es un chatbot?  </a></li>
+                                    <li><a onclick="cerrar()" href="Estadodelarte.html#tipos_de_chats">Tipos de chatbots </a></li>
+                                    <li><a onclick="cerrar()" href="Estadodelarte.html#como_funcionan">¿Cómo funciona un chatbot?</a></li>
+                                    <li><a onclick="cerrar()" href="Estadodelarte.html#características">Características de los chatbots</a></li>
+                                    <li><a onclick="cerrar()" href="Estadodelarte.html#tipo_de_plataformas">Plataformas que ayudan con la creación de bots </a> </li>
+                                    <li><a onclick="cerrar()" href="Estadodelarte.html#Uso_de_los_chatboots">Uso de los chatbots</a></li>
+                                    <li><a onclick="cerrar()" href="Estadodelarte.html#limitaciones_de_los_chat_boots">Limitaciones de los chatbots no code</a></li>
+                                    <li><a onclick="cerrar()" href="Estadodelarte.html#ejemplos_de_chatboots">Ejemplos del uso de chatbots</a></li>
+                                    <li><a onclick="cerrar()" href="Estadodelarte.html#resuelve_el_problema">¿Es un chatbot una solución a mi problema? </a></li>
+                                </ol>
+                            </div>
+                        </li>
+                    
+                </ul>
+            </div>
     <div  class="nav_iframe">
         <iframe title="Menu superior" class="nav_iframe_frame" src="nav.html" frameborder="0">
         </iframe>
@@ -30,7 +72,7 @@
     <!--Se crea el div principal que abarca toda la pagina-->
     <div class="contenedor_principal">
         <div class="contenedor_secundario">
-
+            <a id="Estado_del_arte"></a>
             <p class="Titulos_responsivos"><strong>Estado del arte de los chatbots en 2022 </strong></p>
             <div class="Separdor_de_titulos"></div>
             <div class="Separdor_de_titulos_bajo"></div>
@@ -73,8 +115,11 @@
                             Sin importar el tipo de chatbot que se pretenda utilizar es importante tener en cuenta siempre algunos conceptos sobre estos, así como tener presente múltiples formas de crearlos. 
 
                         </p>
+                        <a id="tipos_de_chats"></a>
                     </div>
+                    
                 </div>
+                
                 <!--Tipos de chat boots-->
                 <p class="Titulos_responsivos"><strong>Tipos de chatbots</strong></p>
                 <div class="Separdor_de_titulos" style="opacity:.5; margin-bottom:1.25rem;"></div>
@@ -110,9 +155,11 @@
                 </div>
                 <div class="contenido_texto_imagenes_Responsivo" >
                     <div class="contenedor_texto"> 
+                        <a id="como_funcionan"></a>
                         <p style="text-align: justify;" >
                             La existencia de  estos dos tipos de chatbots no limita a que un proyecto pueda tener un poco de ambos como es el caso de nuestro bot en particular. 
                         </p>
+                        
                     </div>
                 </div>
             <!--Como funcionan-->
@@ -158,12 +205,16 @@
                         <object data="svg/undraw_road_to_knowledge_m8s0.svg"></object>
                        
                     </div>
+                    
                     <div class="contenedor_texto"> 
                         <p class="Titulos_responsivos" style="text-align:center;"><strong>Natural Language Generation</strong></p>
                         <p style="text-align: justify;" >
                             La generación del lenguaje natural permite que nuestro bot pueda contestar al usuario con frases que no parecen predeterminadas, si no que este es capaz de hacer que las fases se adapten a la conversación.
                         </p>
                     </div>
+                    <a id="características"></a>
+                               
+                    
                     
                 </div>
             <!--Caracteristicas-->
@@ -202,7 +253,7 @@
                         </p>
                        
                     </div>
-
+                    <a id="tipo_de_plataformas"></a>
                 </div>
             <!--Tipos de plataformas-->
             <p class="Titulos_responsivos"><strong>Plataformas que ayudan con la creación de bots</strong></p>
@@ -218,7 +269,7 @@
                 <div class="Separdor_de_titulos" style="opacity:.5; margin-bottom:3.5em;display: block;"></div>
                 <div class="contenido_indice">
                     <div class="sub_contenido">
-                        <ul class="plat_grid" id="plataformas">
+                        <ul class="plat_grid" >
                             <li><a href="#Zendesk" >Zendesk</a></li>
                             <li><a href="#Live chat">Live chat</a></li>
                             <li><a href="#Orlak">Orlak</a></li>
@@ -519,7 +570,9 @@
                     </div>
 
                 </div>
+                <a id="Uso_de_los_chatboots"></a>
                 <br>
+            <!--Uso de los chatboots-->
             </div>
             <p class="Titulos_responsivos"><strong>Uso de los chatbots</strong></p>
             <div class="Separdor_de_titulos" style="opacity:.5; margin-bottom:1.25rem;"></div>
@@ -571,14 +624,181 @@
 
                     </p>
                 </div>
+                <a id="limitaciones_de_los_chat_boots"></a>
             </div>
             <br>
+            <!--Limitaciones de los chatboots-->
             <p class="Titulos_responsivos"><strong>Limitaciones de los chatbots no code</strong></p>
             <div class="Separdor_de_titulos" style="opacity:.5; margin-bottom:1.25rem;"></div>
-        
+            <div class="contenido_texto_imagenes_Responsivo" style=" grid-template-columns: 39% 59%;">
+                    
+                <div id="imagen_no_wrap" class="contenedor_imagen" >
+                    <object data="svg/undraw_robotics_kep0.svg" ></object> 
+                </div>
+                <div class="contenedor_texto"> 
+                    <p style="text-align: justify;" >
+                        Hablaremos un poco de las limitaciones o desventajas que los chatbots no code pueden presentar. Cuando en la creación de un chatbot nos limitan o no tenemos acceso a la codificación del mismo, podemos dejar de lado muchas funcionalidades para las cuales no estaba principalmente diseñado. 
+                    </p>
+                </div>
+            </div>
+            <div class="contenido_texto_imagenes_Responsivo" style=" grid-template-columns: 59% 39%;">
+                    
+                <div class="contenedor_texto" style="text-align: justify;"> 
+                <p>
+                    Ya que estarás limitado a lo que la plataforma ofrezca  y tendrás que adaptar tus necesidades a las herramientas con las que cuentas. Por ello conocer y usar alguna plataforma que permita en cierta medida codificar por tu cuenta alguna de las funcionalidades de tu chatbot puede dar ese plus que tu problema necesita.
+                </p>
+                </div>
+                <div class="contenedor_imagen" > 
+                    <object data="svg/undraw_problem_solving_re_4gq3.svg"></object>
+                </div>
+            </div>
+            <div class="contenido_texto_imagenes_Responsivo" style=" grid-template-columns: 39% 59%;">
+                    
+                <div id="imagen_no_wrap" class="contenedor_imagen" >
+                    <object data="svg/undraw_robotics_kep0.svg" ></object> 
+                </div>
+                <div class="contenedor_texto"> 
+                    <p style="text-align: justify;" >
+                        Siempre estarás limitado a la tecnología con la que desarrolles tu chatbot sin embargo, puedes romper esos límites si investigas un poco más sobre la estructura del código de aquello que manejas. 
+                    </p>
+                </div>
+            </div>
+            <div class="contenido_texto_imagenes_Responsivo" style=" grid-template-columns: 59% 39%;">
+                    
+                <div class="contenedor_texto" style="text-align: justify;"> 
+                <p>
+                    En esta documentación usaremos códigos para creación de este tipo de herramientas. Estar familiarizado con estos ambientes te ayudará a comprender un poco más sobre lo que se está trabajando. 
+                </p>
+                </div>
+                <div class="contenedor_imagen" > 
+                    <a id="ejemplos_de_chatboots"></a>
+                    <object data="svg/undraw_problem_solving_re_4gq3.svg"></object>
+                </div>
                 
-       
+            </div>
+            <p class="Titulos_responsivos"><strong>Ejemplos del uso de chatbots</strong></p>
+            <div class="Separdor_de_titulos" style="opacity:.5; margin-bottom:1.25rem;"></div>
+            <div class="contenido_texto_imagenes_Responsivo" style=" grid-template-columns: 59% 39%;">
+                    
+                <div class="contenedor_texto" style="text-align: justify;"> 
+                <p>
+                    Veamos algunos ejemplos  de chatbots y sus usos en servicios, páginas o por simple entretenimiento. Mostrarte ejemplos de chatbots en accion podria darte un poco de inspiración al momento de desarrollar tu proyecto (depende de la fecha en la que veas esto, las páginas pueden estar o no visibles):
+                </p>
+                </div>
+                <div class="contenedor_imagen" > 
+                    <ul  id="plataformas">
+                        <li ><a class="li_un" target="_blank" href="https://aunoa.ai/cuales-son-las-limitaciones-de-crear-chatbots-con-plataformas-no-code/" >Benefit</a></li>
+                        <li ><a class="li_un" target="_blank" href="https://supermercado.eroski.es/en/" >Eroski  </a></li>
+                        <li ><a class="li_un" target="_blank" href="https://www.schlage.com/en/home.html" >Schlage</a></li>
+                        <li ><a class="li_un" target="_blank" href="https://dkv.es/particulares" >Dkv</a></li>
+                        <li ><a class="li_un" target="_blank" href="https://www.correos.es/es/es/atencion-al-cliente" >Correos</a></li>
+                    </ul>
+                    <a id="resuelve_el_problema"></a>
+                </div>
+            </div>
+            <!--es un chatboot -->
+            <p class="Titulos_responsivos"><strong>¿Es un chatbot una solución a mi problema?</strong></p>
+            <div class="Separdor_de_titulos" style="opacity:.5; margin-bottom:1.25rem;"></div>
+            <div class="contenido_texto_imagenes_Responsivo" >
+                <div class="contenedor_texto"> 
+                    <p style="text-align: justify;" >
+                        Antes de comenzar a trabajar sobre lo que nos interesa y una vez contextualizados en todos los aspectos de los chatbots, es importante preguntarnos si realmente nuestro problema se soluciona implementando un chatbot, para ello podemos revisar algunas de las siguientes preguntas, que nos ayudaran a saber si este tipo de proyectos aplican o no para nuestro problema en particular. 
+                    </p>
+                </div>
+            </div>
+            <div class="contenido_texto_imagenes_Responsivo" style=" grid-template-columns: 59% 39%;">
+                    
+                <div class="contenedor_texto" style="text-align: justify;"> 
+                    <p class="Titulos_responsivos"><strong>1.- ¿Cuál es la comunicación con nuestro usuario final (cliente)?</strong></p>
+                <p>
+                    Si la mayor parte de nuestra comunicación con el usuario final se tiene que realizar de manera personalizada y detallada con los requerimientos de este, entonces un chatbot suena como una buena opción. 
+                </p>
+                </div>
+                <div class="contenedor_imagen" > 
+                    <object data="svg/undraw_problem_solving_re_4gq3.svg"></object>
+                </div>
+            </div>
+            <div class="contenido_texto_imagenes_Responsivo" style=" grid-template-columns: 39% 59%;">
+                    
+                <div id="imagen_no_wrap" class="contenedor_imagen" >
+                    <object data="svg/undraw_robotics_kep0.svg" ></object> 
+                </div>
+                <div class="contenedor_texto"> 
+                    <p class="Titulos_responsivos"style="text-align: justify;"><strong>2.-¿Qué interacciones puede tener un usuario con nosotros ?</strong></p>
+                    <p style="text-align: justify;" >
+                        Puede que la interacción de nuestros usuarios sean más complejas que solo pagar por un servicio o visitar nuestra página, por lo que podría ser de ayuda un chatbot para ello.
+                    </p>
+                </div>
+            </div>
+            <div class="contenido_texto_imagenes_Responsivo" style=" grid-template-columns: 59% 39%;">
+                    
+                <div class="contenedor_texto" style="text-align: justify;"> 
+                    <p class="Titulos_responsivos"><strong>3.- ¿Implementar un chatbots nos ahorra tiempo y costos ?
+                    </strong></p>
+                <p>
+                    Los negocios se resumen en costos y ganancias, tal vez la implementación de un chatbot puede ser más costosa que el beneficio de este, por lo que verificar su viabilidad antes de implementarlo sería lo óptimo.
 
+                </p>
+                </div>
+                <div class="contenedor_imagen" > 
+                    <object data="svg/undraw_problem_solving_re_4gq3.svg"></object>
+                </div>
+            </div>
+            <div class="contenido_texto_imagenes_Responsivo" style=" grid-template-columns: 39% 59%;">
+                    
+                <div id="imagen_no_wrap" class="contenedor_imagen" >
+                    <object data="svg/undraw_robotics_kep0.svg" ></object> 
+                </div>
+                <div class="contenedor_texto"> 
+                    <p class="Titulos_responsivos"style="text-align: justify;"><strong>4.- ¿Porque sería una buena solución un chatbot ? </strong></p>
+                    <p style="text-align: justify;" >
+                        Puede que la interacción de nuestros usuarios sean más complejas que solo pagar por un servicio o visitar nuestra página, por lo que podría ser de ayuda un chatbot para ello.
+                    </p>
+                </div>
+            </div>
+            <div class="contenido_texto_imagenes_Responsivo" >
+                <div class="contenedor_texto"> 
+                    <p style="text-align: justify;" >
+                        Ahora que todo está contextualizado y que sabes un poco más sobre los chatbots y todo lo que los rodea, puedes avanzar sin tropiezos en la creación de uno de estos. 
+                    </p>
+                </div>
+            </div>
+
+
+        <!--autoevaluacion-->
+        <p class="Titulos_responsivos"><strong>Autoevaluación</strong></p>
+       
+        <div class="Separdor_de_titulos" style="opacity:.5; margin-bottom:1.25rem;"></div>
+        <div class="contenido_texto_imagenes_Responsivo" >
+            <div class="contenedor_texto"> 
+                <p style="text-align: justify;" >
+                    En esta sección encontrarás algunas preguntas que te permitirán saber si lo que leíste anteriormente quedó claro del todo. Si no es el caso puedes ingresar a la pregunta para saber donde se resuelve esta misma.
+                </p>
+            </div>
+        </div>
+        <div class="contenido_texto_imagenes_Responsivo" style=" grid-template-columns: 59% 39%;">
+                  
+            <div class="contenedor_texto" style="text-align: justify;"> 
+                <ol class="lista_preguntas_auto">
+                    <li class="lista_preguntas_auto"> <a href="Estadodelarte.html#Estado_del_arte" target="_blank">¿Qué es un chatbot?</a></li>
+                    <li class="lista_preguntas_auto"> <a href="Estadodelarte.html#tipos_de_chats" target="_blank">¿Cuáles son los tipos de chatbots?</a></li>
+                    <li class="lista_preguntas_auto"> <a href="Estadodelarte.html#Uso_de_los_chatboots" target="_blank">¿Cuál es el uso que se les da a estos ? </a></li>
+                    <li class="lista_preguntas_auto"> <a href="Estadodelarte.html#tipo_de_plataformas" target="_blank">¿Qué plataformas ayudan a crearlos?</a></li>
+                    <li class="lista_preguntas_auto"> <a href="Estadodelarte.html#características" target="_blank">¿Cuál es la principal característica de los chatbots ?</a></li>
+                </ol>
+            </div>
+            <div class="contenedor_imagen" > 
+                <object data="svg/undraw_problem_solving_re_4gq3.svg"></object>
+            </div>
+        </div>
+        <div class="navegacion_atras_a_delante">
+        <div class="anterior">
+            <a href="Introduccion.html">Introducción</a>
+        </div>
+        <div class="siguiente">
+            <a href="">Todo sobre Dialog Flow</a>
+        </div>
+        </div>
             </div>
         <!--Fin contendor-->
         </div>
@@ -587,9 +807,13 @@
      
      
     </div>
+    <footer >
+       
+    </footer>
 
     <script src="js/progreso.js">   </script>
     <script src="js/desplazar.js" ></script>
+   
   
  
 </body>
