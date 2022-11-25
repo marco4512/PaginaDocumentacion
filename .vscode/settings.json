@@ -1,5 +1,6 @@
 {
     "background.customImages": [
         "/home/marco/Imágenes/Fondo.jpg"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
