@@ -651,13 +651,117 @@ footer{
     margin: 10px;
     text-align: right;
 }
+/***Estilos del indice****/
+
+.card_fundamentos{
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+}
+.bloke{
+    width: 100%;
+    margin: 0 auto;
+    height: 5em;
+}
+.texto_y_progreso{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:75% 25%;
+   
+}
+.titulo_index{
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.25em;
+    font-size: 1.875em;
+    
+
+}
+
+.cont_tema_logo_nombre{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns:20% 30% 50%;
+}
+.imagen_fundamentos{
+    margin: 0 auto;
+}
+.texto_fund{
+    text-align: left;
+    line-height: 0.625em;
+    padding-top: 2.5em;
+    padding-left: 0.625em;
+    font-size: 1.25em;
+    color: #a9792b ;
+
+}
+.imagen_fundamentos_objeto{
+    width: 8.75em;
+    height: 8.75em;
+}
+.botones{
+    width: 100%;
+    display: grid;
+    grid-template-columns:50% 50%;
+    align-items: center;
+ 
+}
+.ver{
+    background-color: #007bff;
+    height: 3.125em;
+    width: 9.375em;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.retomar{
+    background-color: #a9792b;
+    height: 3.125em;
+    width: 9.375em;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.ver :hover{
+    background-color: #1a2633;
+    height: 3.125em;
+    width: 9.375em;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    cursor:pointer;
+}
+.texto_card{
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1.25em;
+    padding-bottom: 1.25em;
+
+}
+
+
+.texto_boton{
+    padding-top: 0.75em;
+    color: #f9fafb;
+}
+.progreso_total{
+    margin:10px;
+}
 
 
 
-
-
-@media screen and (max-width:800px) {
-  
+@media screen and (max-width:900px) {
+    .texto_y_progreso{
+        margin: 0 auto;
+        display: block;
+       
+    }
     .plat_grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -676,10 +780,76 @@ footer{
     .contenido_ventjas_gen{
         font-size: 12px;
     }
+    .cont_tema_logo_nombre{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        display: block;
+    }
+    .card_fundamentos{
+        width: 95%;
+        padding-bottom: 10px;
+    }
+    .texto_fund{
+        text-align: center;
+        line-height: 0.625em;
+        padding-top: 10px;
+        padding-left: 0.625em;
+        font-size: 15px;
+        color: #a9792b ;
+    
+    }
     
 }
-
+@media screen and (max-width:350px){
+    .texto_y_progreso{
+        margin: 0 auto;
+        display: block;
+       
+    }
+    .botones{
+        width: 100%;
+        align-items: center;
+        display: block;
+    }
+    .ver{
+        margin-bottom: 10px;
+    }
+}
 @media screen and (max-width:650px){
+    .card_fundamentos{
+        width: 95%;
+        padding-bottom: 10px;
+        overflow:hidden;
+    }
+    .texto_fund{
+        text-align: center;
+        line-height: 0.625em;
+        padding-top: 10px;
+        padding-left: 0.625em;
+        font-size: 15px;
+        color: #a9792b ;
+    
+    }
+    .botones{
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .cont_tema_logo_nombre{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .bloke{
+        width: 100%;
+        margin: 0 auto;
+        height: 6.25em;
+    }
     .controles{
         grid-template-columns:40% 20% 40%;
     }
